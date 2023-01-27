@@ -28,7 +28,8 @@ export default {
 </script>
 
 <template>
-<div class="container">
+<router-view></router-view>
+<!-- <div class="container">
     <h1 class="text-center m-3">Progetti</h1>
     <div class="row">
         <div class="col-4 mb-3" v-for="project in projects" :key="project.id">
@@ -41,7 +42,7 @@ export default {
             </div>
         </div>
     </div>
-</div>
+</div> -->
 </template>
 
 

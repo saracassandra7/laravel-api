@@ -1,12 +1,12 @@
 <script>
 export default {
-    name: 'About'
+    name: 'Error404'
 
 }
 </script>
 
 <template>
-<h1>About</h1>
+<h1>Errore 404</h1>
 
 </template>
 
