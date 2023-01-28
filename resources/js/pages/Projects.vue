@@ -35,8 +35,10 @@ export default {
         <div class="col-4 mb-3" v-for="project in projects" :key="project.id">
             <div class="card" style="width: 19rem;">
                <div class="card-body text-center">
-                  <h5 class="card-title">{{project.name}}</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Cliente: {{project.client_name}}</h6>
+                  <h5 class="card-title m-2">
+                    <router-link :to="{name: 'detail', params:{slug: project.slug} }">{{project.name}}</router-link>
+                  </h5>
+                  <h6 class="card-subtitle m-2 text-muted">Cliente: {{project.client_name}}</h6>
                   <!-- <p class="card-text">Descrizione progetto: <br> {{project.summary}}</p> -->
                 </div>
             </div>
