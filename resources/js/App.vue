@@ -1,8 +1,13 @@
 <script>
 import axios from 'axios'
+import Header from './partials/Header.vue'
 
 export default {
     name: 'App',
+
+    components:{
+        Header
+    },
 
     data(){
     return{
@@ -28,6 +33,7 @@ export default {
 </script>
 
 <template>
+<Header/>
 <router-view></router-view>
 <!-- <div class="container">
     <h1 class="text-center m-3">Progetti</h1>
