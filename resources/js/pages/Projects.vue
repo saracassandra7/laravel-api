@@ -33,7 +33,7 @@ export default {
     <h1 class="text-center m-3">Progetti</h1>
     <div class="row">
         <div class="col-4 mb-3" v-for="project in projects" :key="project.id">
-            <div class="card" style="width: 19rem;">
+            <div class="card" id="my-card" style="width: 19rem;">
                <div class="card-body text-center">
                   <h5 class="card-title m-2">
                     <router-link :to="{name: 'detail', params:{slug: project.slug} }">{{project.name}}</router-link>
@@ -49,6 +49,21 @@ export default {
 </template>
 
 
-<style>
+<style lang="scss" scoped>
+#my-card{
+    background-color: rgba(255, 255, 255, 0.781);
+    border: 1px solid rgba(0, 255, 255, 0.678)
+}
+
+a{
+    color: darkblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover,
+    &.active{
+        color: aqua;
+    }
+
+}
 
 </style>

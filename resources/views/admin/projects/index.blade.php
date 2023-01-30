@@ -18,7 +18,6 @@
         <thead>
           <tr>
             <th scope="col"> <a href="{{route('admin.projects.orderby',['id',$direction])}}">Id</a> </th>
-            {{-- <th scope="col">Id</th> --}}
             <th scope="col"><a href="{{route('admin.projects.orderby',['name',$direction])}}">Nome</a></th>
             <th scope="col">Technologies</th>
             <th scope="col">Cliente</th>

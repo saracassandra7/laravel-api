@@ -19,7 +19,9 @@ export default {
 <style lang="scss" scoped>
 header{
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
+    background-color: white;
+    box-shadow: 1px 1px 10px #00ac8767;
     ul{
         list-style: none;
         li{
