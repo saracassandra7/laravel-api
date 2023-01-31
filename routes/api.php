@@ -26,3 +26,6 @@ Route::namespace('Api')
         Route::get('/{slug}', [ProjectController::class, 'show']);
 
     });
+
+
+Route::post('/contacts', [LeadController::class, 'store']);
